@@ -9,7 +9,8 @@ namespace API.Controllers
         [HttpGet]
         public string GetProducts()
         {
-            return "this will be a list of products";
+            return "this will be a list of products System.Environment.Version: " + System.Environment.Version 
+            + "\n" + "System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription: " + System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription;
         }
 
         [HttpGet("{id}")]
